@@ -45,6 +45,6 @@ def turn(board)
     #want to allow the users desired move to reflect on the board 
     move(board, index)
     display_board(board)
-  elsif turn(board)
+  else turn(board)
   end
 end
