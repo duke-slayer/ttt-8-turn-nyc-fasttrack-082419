@@ -41,7 +41,7 @@ def turn(board)
   puts "Please enter 1-9"
   input = gets.chomp
   index = input_to_index
-  if valid_move? (board, index)
+  if valid_move?(board, index)
     #want to allow the users desired move to reflect on the board 
     move(board, index)
     display_board(board)
