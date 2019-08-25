@@ -13,6 +13,7 @@ def input_to_index(input)
 end 
 #move(board, 0, "X")
 
+#move is a destructive method i.e. permanently alters the array 
 def move(board, position, char ="X")
   board[position] = char
 end
@@ -41,8 +42,9 @@ def turn(board)
   input = gets.chomp
   index = input_to_index
   if valid_move? (board, index)
+    #want to allow the users desired move to reflect on the board 
     move(board, index)
     display_board(board)
-  else turn(board)
+  elsif turn(board)
   end
 end
