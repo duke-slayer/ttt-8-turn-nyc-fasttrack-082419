@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
+# Code your CLI Here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
- 
 puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+user_input = gets.chomp
+#saves the variable and puts it through the index def that 
+index = input_to_index(user_input)
+move(board, index)
 display_board(board)
